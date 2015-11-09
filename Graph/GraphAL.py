@@ -75,17 +75,3 @@ class Graph:
             else:
                 out += str(self.graphItems[i])+" :"+paths+"\n"
         return out
-graph = Graph()
-while(True):
-   userInput = str(input())
-   if(userInput=="END"):
-      break
-   vertexFrom = userInput.split()[0]
-   vertexTo = userInput.split()[1]
-   #Creating the vertexes if vertexes are not already created
-   if(not graph.isVertex(vertexFrom)):
-      graph.addVertex(vertexFrom)
-   if(not graph.isVertex(vertexTo)):
-      graph.addVertex(vertexTo)
-   graph.addEdge(vertexFrom,vertexTo)
-print(graph)
