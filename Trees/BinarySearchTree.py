@@ -105,6 +105,13 @@ Binary search tree generated is
            5      16
          /  \    /  \
         1    8  13  12
+
+#functions that can be used
+
+bst.addNode(10) <== adds a new node with value 10
+bst.preOrder(bst.root) <== print nodes in pre oder from root
+bst.postOrder(bst.root) <== print nodes in post oder from root
+bst.inOrder(bst.root) <== print nodes in in oder from root
 '''
 while(True):
    inp = input()
